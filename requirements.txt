@@ -1,0 +1,64 @@
+# ══════════════════════════════════════════════════════════════════
+# Jarvis — Asistente Virtual para Windows
+# requirements.txt — Dependencias del proyecto
+#
+# Instalación:
+#   pip install -r requirements.txt
+#
+# Para entornos virtuales (recomendado):
+#   python -m venv venv
+#   venv\Scripts\activate
+#   pip install -r requirements.txt
+# ══════════════════════════════════════════════════════════════════
+
+# ── Interfaz gráfica ──────────────────────────────────────────────
+PySide6>=6.6.0
+
+# ── Inteligencia Artificial ───────────────────────────────────────
+# Cliente compatible con OpenAI, DeepSeek, Ollama y LM Studio
+openai>=1.30.0
+
+# ── Síntesis de voz (TTS) ─────────────────────────────────────────
+# Motor principal: voces neurales de Microsoft (requiere internet)
+edge-tts>=6.1.9
+
+# Motor de respaldo: síntesis offline
+pyttsx3>=2.90
+
+# Reproducción de audio
+pygame>=2.5.0
+
+# ── Reconocimiento de voz (STT) ───────────────────────────────────
+SpeechRecognition>=3.10.0
+
+# Soporte para micrófono (requerido por SpeechRecognition)
+PyAudio>=0.2.14
+
+# ── Control del sistema operativo ────────────────────────────────
+# Automatización de teclado y mouse (capturas de pantalla, volumen)
+pyautogui>=0.9.54
+
+# Control de volumen de Windows (API nativa)
+pycaw>=20230407
+
+# Dependencia de pycaw
+comtypes>=1.2.0
+
+# Información del sistema (CPU, RAM, procesos)
+psutil>=5.9.0
+
+# Control de brillo de pantalla (opcional)
+screen-brightness-control>=0.22.0
+
+# Papelera de reciclaje (opcional)
+winshell>=0.6
+
+# ── Solicitudes HTTP (clima, noticias, búsqueda) ──────────────────
+requests>=2.31.0
+
+# ── Base de datos ─────────────────────────────────────────────────
+# SQLite está incluido en Python estándar, no requiere instalación adicional
+
+# ── Utilidades ────────────────────────────────────────────────────
+# Manejo de variables de entorno (opcional)
+python-dotenv>=1.0.0
